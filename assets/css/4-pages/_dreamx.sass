@@ -1,6 +1,7 @@
 body
+
 	section.home
-		display: block
+		display: none
 		width: 100%
 		.left
 			text-align: center
@@ -43,3 +44,84 @@ body
 				text-transform: capitalize
 				border-bottom: solid 1px black
 				padding-bottom: 10px
+
+
+	section.servicios
+		display: block
+		width: 100%
+		.left
+			text-align: center
+			position: absolute
+			height: 100vh
+			width: 50%
+			background: black
+			display: flex
+			flex-direction: column
+			justify-content: center
+			color: white
+
+			.logo
+				border-bottom: 100px solid transparent
+				img
+					max-width: 400px
+
+			.text
+				font-size: 1.5em
+				font-weight: 300
+				margin: 0 auto
+				text-align: left
+				border-bottom: 100px solid transparent
+				max-width: 400px
+				p
+			.cta
+				font-size: 1.5em
+				text-transform: capitalize
+				span
+					cursor: pointer
+					padding-bottom: 5px
+					border-bottom: solid 1px white
+		.right
+			width: 50%
+			position: absolute
+			height: 100vh
+			right: 0
+
+			.servicios
+				height: 100vh
+				display: flex
+				flex-direction: column
+				justify-content: center
+				.plataformas
+					overflow: auto
+					margin: 0 auto
+					background: pink
+					max-width: 600px
+					h2
+						text-transform: capitalize
+					.icono
+						display: block
+						width: 100px
+						float: left
+
+						svg
+							display: block
+
+				.redes
+					overflow: auto
+					margin: 10px auto
+					background: pink
+					max-width: 600px
+					.icono
+						float: left
+						width: 100px
+						svg
+				.mailing
+					overflow: auto
+					margin: 10px auto
+					background: pink
+					max-width: 600px
+
+					.icono
+						float: left
+						width: 100px
+						svg

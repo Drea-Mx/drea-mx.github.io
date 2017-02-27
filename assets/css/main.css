@@ -303,7 +303,7 @@ input[type="button"] {
     outline: 0; }
 
 body section.home {
-  display: block;
+  display: none;
   width: 100%; }
   body section.home .left {
     text-align: center;
@@ -345,3 +345,86 @@ body section.home {
       text-transform: capitalize;
       border-bottom: solid 1px black;
       padding-bottom: 10px; }
+
+body section.servicios {
+  display: block;
+  width: 100%; }
+  body section.servicios .left {
+    text-align: center;
+    position: absolute;
+    height: 100vh;
+    width: 50%;
+    background: black;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    color: white; }
+    body section.servicios .left .logo {
+      border-bottom: 100px solid transparent; }
+      body section.servicios .left .logo img {
+        max-width: 400px; }
+    body section.servicios .left .text {
+      font-size: 1.5em;
+      font-weight: 300;
+      margin: 0 auto;
+      text-align: left;
+      border-bottom: 100px solid transparent;
+      max-width: 400px; }
+    body section.servicios .left .cta {
+      font-size: 1.5em;
+      text-transform: capitalize; }
+      body section.servicios .left .cta span {
+        cursor: pointer;
+        padding-bottom: 5px;
+        border-bottom: solid 1px white; }
+  body section.servicios .right {
+    width: 50%;
+    position: absolute;
+    height: 100vh;
+    right: 0; }
+    body section.servicios .right .servicios {
+      height: 100vh;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -webkit-justify-content: center;
+      -ms-flex-pack: center;
+      justify-content: center; }
+      body section.servicios .right .servicios .plataformas {
+        overflow: auto;
+        margin: 0 auto;
+        background: pink;
+        max-width: 600px; }
+        body section.servicios .right .servicios .plataformas h2 {
+          text-transform: capitalize; }
+        body section.servicios .right .servicios .plataformas .icono {
+          display: block;
+          width: 100px;
+          float: left; }
+          body section.servicios .right .servicios .plataformas .icono svg {
+            display: block; }
+      body section.servicios .right .servicios .redes {
+        overflow: auto;
+        margin: 10px auto;
+        background: pink;
+        max-width: 600px; }
+        body section.servicios .right .servicios .redes .icono {
+          float: left;
+          width: 100px; }
+      body section.servicios .right .servicios .mailing {
+        overflow: auto;
+        margin: 10px auto;
+        background: pink;
+        max-width: 600px; }
+        body section.servicios .right .servicios .mailing .icono {
+          float: left;
+          width: 100px; }
