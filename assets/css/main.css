@@ -347,7 +347,7 @@ body section.home {
       padding-bottom: 10px; }
 
 body section.servicios {
-  display: block;
+  display: none;
   width: 100%; }
   body section.servicios .left {
     text-align: center;
@@ -389,6 +389,7 @@ body section.servicios {
     height: 100vh;
     right: 0; }
     body section.servicios .right .servicios {
+      padding: 0 20px 0 20px;
       height: 100vh;
       display: -webkit-flex;
       display: -ms-flexbox;
@@ -399,32 +400,53 @@ body section.servicios {
       -webkit-justify-content: center;
       -ms-flex-pack: center;
       justify-content: center; }
-      body section.servicios .right .servicios .plataformas {
-        overflow: auto;
-        margin: 0 auto;
-        background: pink;
-        max-width: 600px; }
-        body section.servicios .right .servicios .plataformas h2 {
-          text-transform: capitalize; }
-        body section.servicios .right .servicios .plataformas .icono {
+      body section.servicios .right .servicios .cont .box {
+        overflow: hidden;
+        margin: 30px auto;
+        max-width: 500px;
+        position: relative; }
+        body section.servicios .right .servicios .cont .box .title {
+          text-transform: capitalize;
+          position: relative;
+          top: -40px;
+          left: 120px; }
+          body section.servicios .right .servicios .cont .box .title h2 {
+            font-weight: 300; }
+        body section.servicios .right .servicios .cont .box .icono {
+          top: 40%;
+          -webkit-transform: translateY(-50%);
+          -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+          position: absolute;
           display: block;
           width: 100px;
           float: left; }
-          body section.servicios .right .servicios .plataformas .icono svg {
+          body section.servicios .right .servicios .cont .box .icono svg {
             display: block; }
-      body section.servicios .right .servicios .redes {
-        overflow: auto;
-        margin: 10px auto;
-        background: pink;
-        max-width: 600px; }
-        body section.servicios .right .servicios .redes .icono {
-          float: left;
-          width: 100px; }
-      body section.servicios .right .servicios .mailing {
-        overflow: auto;
-        margin: 10px auto;
-        background: pink;
-        max-width: 600px; }
-        body section.servicios .right .servicios .mailing .icono {
-          float: left;
-          width: 100px; }
+        body section.servicios .right .servicios .cont .box .desc {
+          position: relative;
+          top: -50px;
+          font-weight: 400;
+          font-size: 1.1em;
+          max-width: 380px;
+          left: 120px; }
+
+body section.contacto {
+  width: 100%;
+  height: 100vh;
+  position: relative; }
+  body section.contacto .left {
+    width: 50%;
+    left: 0;
+    height: 100vh;
+    position: absolute;
+    background: white; }
+    body section.contacto .left .logo {
+      max-width: 150px;
+      margin: 25px auto; }
+  body section.contacto .right {
+    width: 50%;
+    height: 100vh;
+    position: absolute;
+    right: 0;
+    background: black; }
