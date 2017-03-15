@@ -436,6 +436,7 @@ body section.contacto {
   height: 100vh;
   position: relative; }
   body section.contacto .left {
+    overflow-y: scroll;
     width: 50%;
     left: 0;
     height: 100vh;
@@ -472,3 +473,63 @@ body section.contacto {
     position: absolute;
     right: 0;
     background: black; }
+    body section.contacto .right .cont {
+      width: 100%;
+      color: white; }
+      body section.contacto .right .cont form {
+        margin: 0 auto;
+        max-width: 500px;
+        position: absolute;
+        top: 22%;
+        left: 50%;
+        -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+        transform: translateX(-50%); }
+        body section.contacto .right .cont form input[type="submit"] {
+          float: right;
+          border: solid 1px white;
+          color: white;
+          font-weight: 300;
+          font-size: 1.4em; }
+        body section.contacto .right .cont form .fields {
+          display: -webkit-flex;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-flex-wrap: wrap;
+          -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+          top: 50%; }
+          body section.contacto .right .cont form .fields .field {
+            margin-bottom: 30px; }
+          body section.contacto .right .cont form .fields label {
+            font-weight: 300;
+            font-size: 1.5em; }
+          body section.contacto .right .cont form .fields input {
+            color: white;
+            font-weight: 300;
+            font-size: 1.5em;
+            padding: 5px;
+            border-radius: 4px;
+            height: 30px;
+            background: none;
+            border: solid 1px white; }
+          body section.contacto .right .cont form .fields textarea {
+            border-radius: 4px;
+            background: none;
+            border: solid 1px white; }
+          body section.contacto .right .cont form .fields .telefono {
+            position: absolute;
+            right: 0; }
+          body section.contacto .right .cont form .fields #name {
+            width: 200px;
+            padding-right: 10px; }
+          body section.contacto .right .cont form .fields #tel {
+            width: 200px; }
+          body section.contacto .right .cont form .fields #mail {
+            width: 494px; }
+          body section.contacto .right .cont form .fields #text {
+            width: 492px;
+            height: 120px; }
+          body section.contacto .right .cont form .fields .field {
+            display: block;
+            float: left; }

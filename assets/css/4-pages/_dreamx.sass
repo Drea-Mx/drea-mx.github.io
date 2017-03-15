@@ -130,6 +130,7 @@ body
 		height: 100vh
 		position: relative
 		.left
+			overflow-y: scroll
 			width: 50%
 			left: 0
 			height: 100vh
@@ -163,3 +164,58 @@ body
 			position: absolute
 			right: 0
 			background: black
+
+			.cont
+				width: 100%
+				color: white
+				form
+					margin: 0 auto
+					max-width: 500px
+					position: absolute
+					top: 22%
+					left: 50%
+					transform: translateX(-50%)
+					input[type="submit"]
+						float: right
+						border: solid 1px white
+						color: white
+						font-weight: 300
+						font-size: 1.4em
+					.fields
+						display: flex
+						flex-wrap: wrap
+						top: 50%
+						.field
+							margin-bottom: 30px
+						label
+							font-weight: 300
+							font-size: 1.5em
+						input
+							color: white
+							font-weight: 300
+							font-size: 1.5em
+							padding: 5px
+							border-radius: 4px
+							height: 30px
+							background: none
+							border: solid 1px white
+						textarea
+							border-radius: 4px
+							background: none
+							border: solid 1px white
+						.telefono
+							position: absolute
+							right: 0
+						#name
+							width: 200px
+							padding-right: 10px
+						#tel
+							width: 200px
+						#mail
+							width: 494px
+						#text
+							width: 492px
+							height: 120px
+						.field
+							display: block
+							float: left
