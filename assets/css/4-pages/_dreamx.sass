@@ -1,19 +1,28 @@
 body
 
 	section.home
-		display: none
+		display: block
 		width: 100%
 		.left
 			text-align: center
 			position: absolute
 			height: 100vh
 			width: 50%
-			img
+			.logo
+				width: 400px
+				margin: 0 auto
 				position: relative
-				top: 30%
-				padding: 20px
-				max-width: 400px
+				top: 50%
+				transform: translateY(-100%)
+				.letras
+				.cometa
+					bottom: -10px
+					position: absolute
+					right: 0
+					width: 90px
+					animation: cometa 2s ease infinite
 
+		right: 0
 		.right
 			text-align: center
 			position: absolute
@@ -37,13 +46,20 @@ body
 			transform: translateX(-50%)
 			text-align: center
 			bottom: 10%
+			&:hover .line
+				opacity: 1
 
 			span
 				cursor: pointer
 				font-size: 3em
 				text-transform: capitalize
-				border-bottom: solid 1px black
-				padding-bottom: 10px
+
+			.line
+				width: 100px
+				height: 1px
+				background: black
+				opacity: 0
+				transition: opacity .8s ease-in-out
 
 
 	section.servicios
@@ -126,6 +142,7 @@ body
 							left: 120px
 
 	section.contacto
+		display: none
 		width: 100%
 		height: 100vh
 		position: relative
@@ -224,3 +241,53 @@ body
 						.field
 							display: block
 							float: left
+@keyframes cometa
+	0%
+		right: 0
+		width: 90px
+	50%
+		right: 10px
+		width: 100px
+	100%
+		width: 90px
+		right: 5px
+
+
+@media (max-width: 780px)
+		section.home
+			display: block
+			width: 100%
+			height: 100vh
+			.left
+				text-align: center
+				width: 100% !important
+				.logo
+					top: 150px !important
+					position: relative !important
+					width: 300px
+					margin: 40px auto !important
+					.letras
+						width: 300px
+					.cometa
+						bottom: -10px
+						position: absolute
+						right: 0
+						width: 90px
+						animation: cometa 2s ease infinite
+						right: 50px
+			.right
+				margin: 0 !important
+				text-align: center
+				position: static !important
+				height: 100vh
+				right: 0
+				width: 100% !important
+
+				p
+					position: relative !important
+					margin: 50px auto 0px !important
+					text-align: center !important
+					padding: 50px 0 0 !important
+					max-width: 410px
+					font-size: 2em
+					letter-spacing: 3px
