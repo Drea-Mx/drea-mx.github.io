@@ -8,6 +8,10 @@ $( document ).ready(function() {
     $('section.servicios').fadeOut(1000);
     $('section.contacto').fadeIn(2000);
   });
+  $('#contactoo').click(function(){
+    $('section.servicios').fadeOut(1000);
+    $('section.contacto').fadeIn(2000);
+  });
 
 
 

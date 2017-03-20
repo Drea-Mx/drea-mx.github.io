@@ -1,1 +1,1 @@
-$(document).ready(function(){$("#entrar").click(function(){$("section.home").fadeOut(1e3),$("section.servicios").fadeIn(2e3)}),$("#contacto").click(function(){$("section.servicios").fadeOut(1e3),$("section.contacto").fadeIn(2e3)})});
+$(document).ready(function(){$("#entrar").click(function(){$("section.home").fadeOut(1e3),$("section.servicios").fadeIn(2e3)}),$("#contacto").click(function(){$("section.servicios").fadeOut(1e3),$("section.contacto").fadeIn(2e3)}),$("#contactoo").click(function(){$("section.servicios").fadeOut(1e3),$("section.contacto").fadeIn(2e3)})});
