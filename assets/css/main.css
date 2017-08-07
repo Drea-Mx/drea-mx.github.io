@@ -310,6 +310,9 @@ input[type="button"] {
 body section.home {
   display: block;
   width: 100%; }
+  body section.home h1 {
+    position: absolute;
+    color: white; }
   body section.home .left {
     display: -webkit-box;
     display: -webkit-flex;
