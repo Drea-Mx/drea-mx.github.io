@@ -89,6 +89,7 @@ figure {
 
 hr {
   -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
   box-sizing: content-box;
   height: 0; }
 
@@ -139,6 +140,7 @@ input {
 
 input[type="checkbox"],
 input[type="radio"] {
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0; }
 
@@ -186,7 +188,9 @@ body {
   line-height: 1.6;
   font-family: 'Open Sans', sans-serif;
   -webkit-font-smoothing: antialiased;
-  -webkit-text-size-adjust: 100%; }
+  -webkit-text-size-adjust: 100%;
+  height: 100vh;
+  overflow-y: hidden; }
 
 ::-moz-selection {
   background: #FFF498; }
@@ -284,6 +288,7 @@ input[type="button"] {
   border-radius: 4px;
   border: 1px solid #bbb;
   cursor: pointer;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box; }
   .button:hover, .button:active, .button:focus,
   button:hover,
@@ -306,12 +311,16 @@ body section.home {
   display: block;
   width: 100%; }
   body section.home .left {
+    display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
     -webkit-flex-direction: column;
     -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-pack: center;
     -webkit-justify-content: center;
     -ms-flex-pack: center;
     justify-content: center;
@@ -334,12 +343,16 @@ body section.home {
         animation: cometa 2s ease infinite;
         right: 0; }
   body section.home .right {
+    display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
     -webkit-flex-direction: column;
     -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-pack: center;
     -webkit-justify-content: center;
     -ms-flex-pack: center;
     justify-content: center;
@@ -380,6 +393,8 @@ body section.home {
       height: 1px;
       background: black;
       opacity: 0;
+      -webkit-transition: opacity .8s ease-in-out;
+      -o-transition: opacity .8s ease-in-out;
       transition: opacity .8s ease-in-out; }
 
 body section.servicios {
@@ -387,6 +402,7 @@ body section.servicios {
   width: 100%; }
   body section.servicios .ctaa {
     text-transform: capitalize;
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
     padding: 15px;
     position: absolute;
@@ -402,12 +418,16 @@ body section.servicios {
     height: 100vh;
     width: 50%;
     background: black;
+    display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
     -webkit-flex-direction: column;
     -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-pack: center;
     -webkit-justify-content: center;
     -ms-flex-pack: center;
     justify-content: center;
@@ -438,6 +458,8 @@ body section.servicios {
         height: .5px;
         background: white;
         opacity: 0;
+        -webkit-transition: opacity .8s ease-in-out;
+        -o-transition: opacity .8s ease-in-out;
         transition: opacity .8s ease-in-out; }
   body section.servicios .right {
     width: 50%;
@@ -447,12 +469,16 @@ body section.servicios {
     body section.servicios .right .servicios {
       padding: 0 20px 0 20px;
       height: 100vh;
+      display: -webkit-box;
       display: -webkit-flex;
       display: -ms-flexbox;
       display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
       -webkit-flex-direction: column;
       -ms-flex-direction: column;
       flex-direction: column;
+      -webkit-box-pack: center;
       -webkit-justify-content: center;
       -ms-flex-pack: center;
       justify-content: center;
@@ -514,12 +540,14 @@ body section.contacto {
       max-width: 100px;
       margin: 25px auto; }
     body section.contacto .left .equipo {
+      display: -webkit-box;
       display: -webkit-flex;
       display: -ms-flexbox;
       display: flex;
       -webkit-flex-wrap: wrap;
       -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+      -webkit-box-pack: center;
       -webkit-justify-content: center;
       -ms-flex-pack: center;
       justify-content: center;
@@ -527,12 +555,17 @@ body section.contacto {
       body section.contacto .left .equipo .personas {
         cursor: pointer;
         padding: 0 30px;
+        -webkit-box-sizing: border-box;
         box-sizing: border-box; }
         body section.contacto .left .equipo .personas:hover {
           opacity: 1;
           border: solid 1px black;
+          -webkit-transition: opacity .5 ease-in-out;
+          -o-transition: opacity .5 ease-in-out;
           transition: opacity .5 ease-in-out; }
           body section.contacto .left .equipo .personas:hover img {
+            -webkit-transition: width .5s ease-in-out;
+            -o-transition: width .5s ease-in-out;
             transition: width .5s ease-in-out;
             width: 140px; }
         body section.contacto .left .equipo .personas h3 {
@@ -540,6 +573,8 @@ body section.contacto {
           font-weight: 300;
           letter-spacing: 5px; }
         body section.contacto .left .equipo .personas img {
+          -webkit-transition: width .5s ease-in-out;
+          -o-transition: width .5s ease-in-out;
           transition: width .5s ease-in-out;
           width: 150px; }
         body section.contacto .left .equipo .personas p {
@@ -570,6 +605,7 @@ body section.contacto {
           font-weight: 300;
           font-size: 1.4em; }
         body section.contacto .right .cont form .fields {
+          display: -webkit-box;
           display: -webkit-flex;
           display: -ms-flexbox;
           display: flex;
@@ -594,6 +630,7 @@ body section.contacto {
             body section.contacto .right .cont form .fields input input:focus {
               outline: none !important;
               border: solid 1px red;
+              -webkit-box-shadow: 0 0 10px #888;
               box-shadow: 0 0 10px #888; }
           body section.contacto .right .cont form .fields textarea {
             border-radius: 4px;
@@ -657,8 +694,7 @@ body section.contacto {
 @media (max-width: 780px) {
   section.home {
     display: block;
-    width: 100%;
-    height: 100vh; }
+    width: 100%; }
     section.home .left {
       position: static !important;
       height: auto !important;
