@@ -313,7 +313,8 @@ body section.home {
   body section.home h1 {
     position: absolute;
     color: white;
-    z-index: -1 !important; }
+    z-index: -1 !important;
+    opacity: 0; }
   body section.home .left {
     display: -webkit-box;
     display: -webkit-flex;
