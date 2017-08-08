@@ -312,7 +312,8 @@ body section.home {
   width: 100%; }
   body section.home h1 {
     position: absolute;
-    color: white; }
+    color: white;
+    z-index: -1; }
   body section.home .left {
     display: -webkit-box;
     display: -webkit-flex;
