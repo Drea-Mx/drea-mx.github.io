@@ -4,12 +4,12 @@
 	#section0
 		.linecolors
 			width: 10px
-			height: 300vh
+			height: 780vh
 			background: $azul
 			margin-left: 8%
 			position: relative
 			top: 10%
-			border-radius: 20px 20px 0 0
+			border-radius: 20px 20px 20px 20px
 			background: rgba(48,234,255,1)
 			background: -moz-linear-gradient(top, rgba(48,234,255,1) 0%, rgba(255,72,11,1) 50%, rgba(91,1,85,1) 100%)
 			background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(48,234,255,1)), color-stop(50%, rgba(255,72,11,1)), color-stop(100%, rgba(91,1,85,1)))
@@ -101,6 +101,188 @@
 				display: none
 				p
 					font-size: 1.5em
+	#section3
+		.content
+			position: absolute
+			top: 50%
+			left: 50%
+			transform: translate(-50%,-50%)
+			text-align: center
+			.numero
+				cursor: pointer
+				margin-bottom: 50px
+				p
+					font-size: 4em
+			.lead
+				cursor: pointer
+				p
+					font-size: 4.5em
+			.line
+				margin: 0 auto 30px
+				text-align: center
+				width: 300px
+				height: 1px
+				background: $azul
+				animation: linebtn 800ms infinite
+			.description
+				display: none
+				p
+					font-size: 1.5em
+	#section4 
+		.content
+			.calendario
+				img
+					padding: 20px
+					box-sizing: border-box
+					position: absolute
+					top: 50%
+					left: 50%
+					transform: translate(-50%, -50%)
+					max-width: 60%
+			.circulos
+				display: flex
+				flex-direction: row
+				justify-content: center
+				.circulo
+					cursor: pointer
+				.uno
+					margin: 50px
+					border-radius: 20px
+					width: 20px
+					height: 20px
+					border: solid 2px #FF4A0B
+				.dos
+					margin: 50px
+					border-radius: 20px
+					width: 20px
+					height: 20px
+					border: solid 2px #000000
+				.tres
+					margin: 50px
+					border-radius: 20px
+					width: 20px
+					height: 20px
+					border: solid 2px #5B0155
+				.cuatro
+					margin: 50px
+					border-radius: 20px
+					width: 20px
+					height: 20px
+					border: solid 2px #30E9FF
+			.palabras
+				text-align: center
+				.palabra
+					position: absolute
+					left: 50%
+					transform: translateX(-50%)
+					bottom: 4%
+					font-size: 2.5em
+				.encuesta
+					display: none
+					color: $naranja
+				.sketch
+					display: none
+					color: #000000
+				.mockup
+					display: none
+					color: $morado
+				.desarrollo
+					display: none
+					color: $azul
+	#section5
+		.content
+			position: absolute
+			top: 50%
+			left: 50%
+			transform: translate(-50%,-50%)
+			.palabras
+				display: flex
+				text-align: center
+				justify-content: center
+				.izquierda
+					margin-right: 150px
+					.line1
+						height: 1px
+						width: 300px
+						background: $naranja
+						text-align: center
+						margin-top: 50px
+						animation: linebtn 800ms infinite
+					p
+						font-size: 2.5em
+				.derecha
+					.line2
+						height: 1px
+						width: 300px
+						background: $naranja
+						text-align: center
+						margin-top: 50px
+						animation: linebtn 800ms infinite
+					p
+						font-size: 2.5em
+				.precio1
+					margin-top: 50px
+					p
+						font-size: 2.5em
+				.precio2
+					margin-top: 50px
+					p
+						font-size: 2.5em
+			.cuadro
+				margin-top: 50px
+				text-align: center
+				.nivel1
+					display: flex
+					justify-content: center
+					.nivel11
+						box-sizing: border-box
+						border: solid 1px $azul
+						text-align: center
+						padding: 10px 50px 0px
+						.nivel22
+							width: 100px
+							padding-top: 10px
+							border-top: solid 1px $azul
+					.doce
+						p
+							font-size: 1.3em
+
+					.veinticuatro
+						p
+							font-size: 1.3em
+					.treintayseis
+						p
+							font-size: 1.3em
+				
+					.precio1
+						p
+							font-size: 1.3em
+					.precio2
+						p
+							font-size: 1.3em
+					.precio3
+						p
+							font-size: 1.3em
+	#section6
+		.content
+			position: absolute
+			top: 50%
+			left: 50%
+			transform: translate(-50%, -50%)
+			text-align: center
+			.tel
+				padding-bottom: 20px
+				p
+					font-size: 2.5em
+			.line
+				height: 1px
+				width: 300px
+				background: $naranja
+				animation: linebtn 800ms infinite
+			.mail
+				padding-top: 30px
+				a
+					font-size: 2.5em
 @keyframes linebtn
 	0%
 		opacity: 1
